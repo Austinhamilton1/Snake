@@ -2,7 +2,7 @@ namespace Snake
 {
     public partial class Canvas : Form
     {
-        SolidBrush sb = new SolidBrush(Color.Green);
+        SolidBrush brush = new SolidBrush(Color.Green);
         Graphics g = null;
 
         public Canvas()
