@@ -11,8 +11,8 @@ namespace Snake
     /// </summary>
     internal class Cell
     {
-        public int Width { get { return 10; } }
-        public int Height { get { return 10; } }
+        public int Width { get { return 20; } }
+        public int Height { get { return 20; } }
         public int X { get; set; }
         public int Y { get; set; }
         public bool IsSnake { get; set; }

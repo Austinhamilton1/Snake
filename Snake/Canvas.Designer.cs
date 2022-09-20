@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.screen = new System.Windows.Forms.Panel();
+            this.clock = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // screen
@@ -40,6 +42,12 @@
             this.screen.Size = new System.Drawing.Size(1000, 1000);
             this.screen.TabIndex = 0;
             this.screen.Paint += new System.Windows.Forms.PaintEventHandler(this.screen_Paint);
+            // 
+            // clock
+            // 
+            this.clock.Enabled = true;
+            this.clock.Interval = 500;
+            this.clock.Tick += new System.EventHandler(this.clock_Tick);
             // 
             // Canvas
             // 
@@ -59,5 +67,6 @@
 
         private Panel canvas;
         private Panel screen;
+        private System.Windows.Forms.Timer clock;
     }
 }
