@@ -46,7 +46,7 @@
             // clock
             // 
             this.clock.Enabled = true;
-            this.clock.Interval = 500;
+            this.clock.Interval = 250;
             this.clock.Tick += new System.EventHandler(this.clock_Tick);
             // 
             // Canvas
@@ -59,6 +59,7 @@
             this.MaximizeBox = false;
             this.Name = "Canvas";
             this.Text = "Snake";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Canvas_KeyDown);
             this.ResumeLayout(false);
 
         }

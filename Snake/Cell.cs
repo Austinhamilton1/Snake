@@ -9,7 +9,7 @@ namespace Snake
     /// <summary>
     /// This class is the base unit for what makes up the game grid
     /// </summary>
-    internal class Cell
+    public class Cell
     {
         public int Width { get { return 20; } }
         public int Height { get { return 20; } }
@@ -41,7 +41,7 @@ namespace Snake
             else
                 brush.Color = Color.Black;
 
-            g.FillRectangle(brush, new Rectangle(X, Y, Width, Height));
+            g.FillRectangle(brush, new Rectangle(X * 20, Y * 20, Width, Height));
         }
     }
 }
