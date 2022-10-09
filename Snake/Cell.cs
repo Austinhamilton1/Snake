@@ -15,7 +15,7 @@ namespace Snake
         public int Height { get { return 20; } }
         public int X { get; set; }
         public int Y { get; set; }
-        public bool IsSnake { get; set; }
+        public int IsSnake { get; set; }
         public bool IsApple { get; set; }
 
         public Cell(int x, int y) 
